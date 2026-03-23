@@ -6,12 +6,12 @@
   place-items: center;
   padding: 24px;
   background:
-    radial-gradient(circle at top, rgba(255, 255, 255, 0.05), transparent 35%),
-    linear-gradient(180deg, #aec9ff 0%, #0a0f18 45%, #2c5fa5 100%);
+    radial-gradient(circle at top, #ffffff0d, #0000 35%),
+    linear-gradient(#aec9ff 0%, #0a0f18 45%, #2c5fa5 100%);
   color: #f5f7fb;
 }
 
-/* subtle glow in background */
+/* bg glow */
 .under-construction::before {
   content: '';
   position: absolute;
@@ -23,7 +23,7 @@
     rgba(93, 146, 255, 0.03) 35%,
     transparent 70%
   );
-  filter: blur(30px);
+  filter: blur(40px);
   pointer-events: none;
 }
 
@@ -71,12 +71,12 @@
 .ripple {
   position: absolute;
   left: 50%;
-  width: 140vw;
-  height: 160px;
+  width: 120vw;
+  height: 180px;
   border-radius: 50%;
   transform: translateX(-50%);
-  border: 1px solid rgba(168, 200, 255, 0.1);
-  filter: blur(0.2px);
+  border: 4px solid rgba(100, 115, 139, 0.1);
+  filter: blur(2px);
 }
 
 .ripple-1 {
@@ -86,15 +86,15 @@
 
 .ripple-2 {
   bottom: 8%;
-  width: 150vw;
-  border-color: rgba(168, 200, 255, 0.08);
+  width: 130vw;
+  border-color: rgba(100, 115, 139, 0.07);
   animation: drift 11s ease-in-out infinite reverse;
 }
 
 .ripple-3 {
-  bottom: 5%;
-  width: 160vw;
-  border-color: rgba(168, 200, 255, 0.06);
+  bottom: 3%;
+  width: 140vw;
+  border-color: rgba(100, 115, 139, 0.05);
   animation: drift 14s ease-in-out infinite;
 }
 
