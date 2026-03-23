@@ -1,12 +1,21 @@
 import './styles.css';
+import UnderConstruction from './UnderConstruction';
+import './under-construction.css';
 
 import Navbar from './components/Navbar';
 import Hero from './sections/Hero';
 import About from './sections/About';
 import Projects from './sections/Projects';
 import Contact from './sections/Contact';
+function App() {
+  return <UnderConstruction />;
+}
 
-const isMaintenance = true;
+export default App;
+
+{
+  /*
+  const isMaintenance = true;
 
 export default function App() {
   if (isMaintenance) {
@@ -36,4 +45,7 @@ export default function App() {
       </footer>
     </>
   );
+}
+
+  */
 }
