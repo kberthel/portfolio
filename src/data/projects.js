@@ -1,7 +1,10 @@
+import niftyImg from '../assets/images/nifty.webp';
+import weatherImg from '../assets/images/weather.webp';
+import tictactoeImg from '../assets/images/tictactoe.webp';
 const projects = [
   {
     title: 'Weather App',
-    image: 'src/assets/weather-app.webp',
+    image: weatherImg,
     position: 'top',
     description: 'Responsive weather app using OpenWeather API.',
     tech: ['React', 'Vite', 'CSS Grid'],
@@ -11,7 +14,7 @@ const projects = [
 
   {
     title: 'Nifty App',
-    image: 'src/assets/nifty-hero.webp',
+    image: niftyImg,
     position: '50% 55%',
     description:
       'A responsive web app offers pregnancy and parenting expert advice & services for people in their parenting journey.',
@@ -20,7 +23,7 @@ const projects = [
   },
   {
     title: 'Tic Tac Toe',
-    image: 'src/assets/tic-tac-toe.webp',
+    image: tictactoeImg,
     position: '50% 15%',
     description:
       'A classic tic-tac-toe game built with React, focusing on state management, game logic, and user interaction.',

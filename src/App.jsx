@@ -19,7 +19,7 @@ export default function App() {
         <Contact />
       </main>
       <footer className="container">
-        <p>© 2026 Your Name</p>
+        <p>© 2026 KaBéka</p>
       </footer>
     </>
   );
