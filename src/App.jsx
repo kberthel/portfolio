@@ -11,9 +11,11 @@ const isMaintenance = true;
 export default function App() {
   if (isMaintenance) {
     return (
-      <main style={{ textAlign: 'center', marginTop: '40vh' }}>
-        <h1>kabeka.studio</h1>
-        <p>Under construction — updating soon ✨</p>
+      <main className="maintenance">
+        <div className="content">
+          <h1>kabeka.studio</h1>
+          <p>Under construction — updating soon ✨</p>
+        </div>
       </main>
     );
   }
