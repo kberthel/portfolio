@@ -6,7 +6,18 @@ import About from './sections/About';
 import Projects from './sections/Projects';
 import Contact from './sections/Contact';
 
+const isMaintenance = true;
+
 export default function App() {
+  if (isMaintenance) {
+    return (
+      <main style={{ textAlign: 'center', marginTop: '40vh' }}>
+        <h1>kabeka.studio</h1>
+        <p>Under construction — updating soon ✨</p>
+      </main>
+    );
+  }
+
   return (
     <>
       <Navbar />
