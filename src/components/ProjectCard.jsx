@@ -1,11 +1,20 @@
 export default function ProjectCard({ project }) {
   return (
     <article className="project-card">
-      <img
-        src={project.image}
-        alt={project.title}
-        style={{ objectPosition: project.position || 'center' }}
-      />
+      {project.live && (
+        <a
+          href={project.live}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`View ${project.title} ${project.github ? 'live demo' : 'case study'}`}
+        >
+          <img
+            src={project.image}
+            alt={`Preview of ${project.title}`}
+            style={{ objectPosition: project.position || 'center' }}
+          />
+        </a>
+      )}
 
       <h3>{project.title}</h3>
 
