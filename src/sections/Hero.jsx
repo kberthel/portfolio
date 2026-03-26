@@ -1,11 +1,11 @@
-import avatar from '../assets/avatar.webp';
+import avatar from '../assets/images/avatar.webp';
 
 export default function Hero() {
   return (
     <section className="hero container">
-      <img src={avatar} alt="Your Name" className="avatar" />
+      <img src={avatar} alt="Karhan" className="avatar" />
 
-      <h1>Your Name</h1>
+      <h1>Karhan</h1>
 
       <p className="tagline">UX/UI Designer & Front-End Developer</p>
 

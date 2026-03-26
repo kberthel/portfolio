@@ -6,7 +6,8 @@ const projects = [
     title: 'Weather App',
     image: weatherImg,
     position: 'top',
-    description: 'Responsive weather app using OpenWeather API.',
+    description:
+      'A responsive weather application built with React, using the OpenWeather API to display real-time forecasts and dynamic weather data.',
     tech: ['React', 'Vite', 'CSS Grid'],
     live: 'https://kberthel.github.io/Weather-App/',
     github: 'https://github.com/kberthel/Weather-App',
@@ -28,10 +29,7 @@ const projects = [
     description:
       'A classic tic-tac-toe game built with React, focusing on state management, game logic, and user interaction.',
     tech: ['React', 'Vite', 'Vercel'],
-    live: [
-      'https://kberthel.github.io/react-tic-tac-toe/',
-      'https://tic-tac-toe-kberthel.vercel.app/',
-    ],
+    live: ['https://tic-tac-toe-kberthel.vercel.app/'],
     github: 'https://github.com/kberthel/react-tic-tac-toe',
   },
 ];

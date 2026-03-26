@@ -3,7 +3,7 @@ export default function Contact() {
     <section id="contact" className="container">
       <h2>Contact</h2>
       <p>
-        Email: <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>
+        Email: <a href="mailto:kabeka@kabeka.studio">kabeka@kabeka.studio</a>
       </p>
     </section>
   );

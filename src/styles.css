@@ -54,7 +54,7 @@ body::before {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 2040px;
   margin: auto;
   padding: 36px 20px;
 }
@@ -254,7 +254,7 @@ main > section:first-child {
 .tech span {
   display: inline-block;
   padding: 4px 8px;
-  margin-right: 6px;
+  margin: 0 6px 6px 0;
   border-radius: 6px;
   background: rgba(54, 109, 208, 0.08);
   font-size: var(--text-xs);
@@ -318,90 +318,6 @@ footer {
   font-size: var(--text-sm);
   color: var(--text);
   margin-top: 48px;
-}
-
-/* maintenance */
-.maintenance {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
-
-  background: linear-gradient(180deg, #f8fbff 0%, #eaf2ff 100%);
-}
-
-/* flowing light layer */
-.maintenance::before {
-  content: '';
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: -50%;
-  left: -50%;
-
-  background: radial-gradient(
-    circle at 30% 50%,
-    rgba(165, 200, 255, 0.25),
-    transparent 60%
-  );
-
-  animation: flow 20s linear infinite;
-}
-
-/* second layer for depth */
-.maintenance::after {
-  content: '';
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  top: -50%;
-  left: -50%;
-
-  background: radial-gradient(
-    circle at 70% 50%,
-    rgba(54, 109, 208, 0.15),
-    transparent 60%
-  );
-
-  animation: flowReverse 30s linear infinite;
-}
-
-.content {
-  position: relative;
-  text-align: center;
-  z-index: 1;
-}
-
-.content h1 {
-  font-size: 2rem;
-  margin-bottom: 12px;
-  color: #2e2e2e;
-}
-
-.content p {
-  color: #555;
-  font-size: 1rem;
-}
-
-/* animations */
-@keyframes flow {
-  0% {
-    transform: translateX(0) translateY(0);
-  }
-  100% {
-    transform: translateX(10%) translateY(-5%);
-  }
-}
-
-@keyframes flowReverse {
-  0% {
-    transform: translateX(0) translateY(0);
-  }
-  100% {
-    transform: translateX(-10%) translateY(5%);
-  }
 }
 
 @keyframes fadeIn {

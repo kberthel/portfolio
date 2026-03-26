@@ -18,12 +18,16 @@ export default function ProjectCard({ project }) {
       </div>
 
       <div className="project-links">
-        <a href={project.live} target="_blank" rel="noopener noreferrer">
-          Live
-        </a>
-        <a href={project.github} target="_blank" rel="noopener noreferrer">
-          Code
-        </a>
+        {project.live && (
+          <a href={project.live} target="_blank" rel="noopener noreferrer">
+            {project.github ? 'Live' : 'Case Study'}
+          </a>
+        )}
+        {project.github && (
+          <a href={project.github} target="_blank" rel="noopener noreferrer">
+            Code
+          </a>
+        )}
       </div>
     </article>
   );
